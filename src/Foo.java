@@ -1,5 +1,5 @@
 public class Foo {
-    private void bar() {
+    private bar() {
         System.out.println("Hello World!");
     }
 }
