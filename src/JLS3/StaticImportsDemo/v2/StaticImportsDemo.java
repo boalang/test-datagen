@@ -1,4 +1,4 @@
-import foo.Light;
+import static foo.Light.STATIC;
 
 public class StaticImportsDemo
 {

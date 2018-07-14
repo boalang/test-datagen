@@ -1,3 +1,5 @@
+import static foo.Light.STATIC;
+
 public class StaticImportsDemo
 {
    public static void main(String[] args)
