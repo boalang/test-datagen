@@ -9,6 +9,7 @@ public class UnsafeVarargsDemo
              Arrays.asList("D", "E", "F"));
    }
 
+   @SafeVarargs
    static void unsafe(List<String>... l)
    {
       Object[] oArray = l;
