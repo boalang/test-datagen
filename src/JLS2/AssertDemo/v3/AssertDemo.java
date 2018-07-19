@@ -20,10 +20,10 @@ class PNG
  
       if (filespec == null)
          throw new NullPointerException("filespec is null");
-      try (FileInputStream fis = new FileInputStream(filespec))
-      {
+      try {
+    	 FileInputStream fis = new FileInputStream(filespec);
          readHeader(fis);
-      }
+      } finally{}
    }
 
    private void readHeader(InputStream is) throws IOException
