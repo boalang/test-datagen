@@ -15,8 +15,7 @@ public class UnsafeVarargsDemo
       Object[] oArray = l;
       oArray[0] = Arrays.asList(new Double(3.5));
       String s = l[0].get(0);
-      if (true)
-    	  return;
+      return;
       System.out.println(s);
    }
 }
