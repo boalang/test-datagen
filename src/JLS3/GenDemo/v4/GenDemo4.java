@@ -22,6 +22,8 @@ public class GenDemo
 
    static void printList(List<?> list)
    {
+	   if (list == null)
+		   return;
       Iterator<?> iter = list.iterator();
       while (iter.hasNext())
          System.out.println(iter.next());

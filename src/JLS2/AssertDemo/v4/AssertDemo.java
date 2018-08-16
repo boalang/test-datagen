@@ -4,9 +4,7 @@ public class AssertDemo
    {
       int[] array = { 20, 91, -6, 16, 0, 7, 51, 42, 3, 1 };
       sort(array);
-      for (int element: array)
-         System.out.printf("%d ", element);
-      System.out.println();
+  
    }
 
    private static boolean isSorted(int[] x)
