@@ -68,22 +68,21 @@ class SortedEmployees<E extends Employee & Comparable<E>>
    {
       return index;
    }
+   
+   public static void process(List<? extends Foo> list) {
+	    for (Foo elem : list) {
+	        // ...
+	    }
+	}
+
+	public static void addNumbers(List<? super Integer> list) {
+	    for (int i = 1; i <= 10; i++) {
+	        list.add(i);
+	    }
+	}
+
 }
 
-List<? extends Foo> list;
-List<? super Integer> list2;
-
-public static void process(List<? extends Foo> list) {
-    for (Foo elem : list) {
-        // ...
-    }
-}
-
-public static void addNumbers(List<? super Integer> list) {
-    for (int i = 1; i <= 10; i++) {
-        list.add(i);
-    }
-}
 
 public class GenDemo
 {

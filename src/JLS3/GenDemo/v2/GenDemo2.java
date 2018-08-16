@@ -27,19 +27,21 @@ abstract class Employee
    {
       return name+": "+hourlySalary.toString();
    }
+   
+   public static void process(List<? extends Foo> list) {
+	    for (Foo elem : list) {
+	        // ...
+	    }
+	}
+
+	public static void addNumbers(List<? super Integer> list) {
+	    for (int i = 1; i <= 10; i++) {
+	        list.add(i);
+	    }
+	}
 }
 
-public static void process(List<? extends Foo> list) {
-    for (Foo elem : list) {
-        // ...
-    }
-}
 
-public static void addNumbers(List<? super Integer> list) {
-    for (int i = 1; i <= 10; i++) {
-        list.add(i);
-    }
-}
 
 class Accountant extends Employee implements Comparable<Accountant>
 {
