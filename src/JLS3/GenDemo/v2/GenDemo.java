@@ -70,6 +70,9 @@ class SortedEmployees<E extends Employee & Comparable<E>>
    }
 }
 
+List<? extends Foo> list;
+List<? super Integer> list2;
+
 public static void process(List<? extends Foo> list) {
     for (Foo elem : list) {
         // ...
